@@ -1,20 +1,51 @@
 //
 //  OnboardingView.swift
-//  Shopping-App-Pazarama
+//  Ceksat
 //
-//  Created by Anıl Öncül on 26.10.2022.
+//  Created by Pazarama iOS Bootcamp on 22.10.2022.
 //
 
 import UIKit
 
-class OnboardingView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+final class OnboardingView: UIView {
+    // MARK: - Properties
+    var image: UIImage? {
+        didSet {
+            imageView.image = image
+        }
     }
-    */
-
+    
+    var text: String? {
+        didSet {
+            label.text = text
+        }
+    }
+    
+    var headerText: String? {
+        didSet {
+            headerLabel.text = headerText
+        }
+    }
+    
+    @IBOutlet private weak var headerLabel: UILabel!
+    @IBOutlet private weak var contentView: UIView!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var label: UILabel!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        Bundle.main.loadNibNamed("OnboardingView", owner: self)
+        addSubview(contentView)
+        contentView.frame = bounds
+        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    }
 }
