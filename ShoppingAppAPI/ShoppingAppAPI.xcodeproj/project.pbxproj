@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5785FEB291137F700E97EC6 /* ShoppingAppAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = D5785FEA291137F700E97EC6 /* ShoppingAppAPI.docc */; };
+		D5785FF1291137F700E97EC6 /* ShoppingAppAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5785FE6291137F700E97EC6 /* ShoppingAppAPI.framework */; };
+		D5785FF6291137F700E97EC6 /* ShoppingAppAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5785FF5291137F700E97EC6 /* ShoppingAppAPITests.swift */; };
+		D5785FF7291137F700E97EC6 /* ShoppingAppAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D5785FE9291137F700E97EC6 /* ShoppingAppAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5786001291138F600E97EC6 /* FakeStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5786000291138F600E97EC6 /* FakeStoreService.swift */; };
+		D578600429113CAC00E97EC6 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D578600329113CAC00E97EC6 /* Moya */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5785FF2291137F700E97EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5785FDD291137F700E97EC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5785FE5291137F700E97EC6;
+			remoteInfo = ShoppingAppAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5785FE6291137F700E97EC6 /* ShoppingAppAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShoppingAppAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5785FE9291137F700E97EC6 /* ShoppingAppAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingAppAPI.h; sourceTree = "<group>"; };
+		D5785FEA291137F700E97EC6 /* ShoppingAppAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ShoppingAppAPI.docc; sourceTree = "<group>"; };
+		D5785FF0291137F700E97EC6 /* ShoppingAppAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5785FF5291137F700E97EC6 /* ShoppingAppAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppAPITests.swift; sourceTree = "<group>"; };
+		D5786000291138F600E97EC6 /* FakeStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5785FE3291137F700E97EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D578600429113CAC00E97EC6 /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5785FED291137F700E97EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5785FF1291137F700E97EC6 /* ShoppingAppAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5785FDC291137F700E97EC6 = {
+			isa = PBXGroup;
+			children = (
+				D5785FE8291137F700E97EC6 /* ShoppingAppAPI */,
+				D5785FF4291137F700E97EC6 /* ShoppingAppAPITests */,
+				D5785FE7291137F700E97EC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5785FE7291137F700E97EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5785FE6291137F700E97EC6 /* ShoppingAppAPI.framework */,
+				D5785FF0291137F700E97EC6 /* ShoppingAppAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5785FE8291137F700E97EC6 /* ShoppingAppAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D5785FE9291137F700E97EC6 /* ShoppingAppAPI.h */,
+				D5785FEA291137F700E97EC6 /* ShoppingAppAPI.docc */,
+				D5786000291138F600E97EC6 /* FakeStoreService.swift */,
+			);
+			path = ShoppingAppAPI;
+			sourceTree = "<group>";
+		};
+		D5785FF4291137F700E97EC6 /* ShoppingAppAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5785FF5291137F700E97EC6 /* ShoppingAppAPITests.swift */,
+			);
+			path = ShoppingAppAPITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D5785FE1291137F700E97EC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5785FF7291137F700E97EC6 /* ShoppingAppAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D5785FE5291137F700E97EC6 /* ShoppingAppAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5785FFA291137F700E97EC6 /* Build configuration list for PBXNativeTarget "ShoppingAppAPI" */;
+			buildPhases = (
+				D5785FE1291137F700E97EC6 /* Headers */,
+				D5785FE2291137F700E97EC6 /* Sources */,
+				D5785FE3291137F700E97EC6 /* Frameworks */,
+				D5785FE4291137F700E97EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingAppAPI;
+			packageProductDependencies = (
+				D578600329113CAC00E97EC6 /* Moya */,
+			);
+			productName = ShoppingAppAPI;
+			productReference = D5785FE6291137F700E97EC6 /* ShoppingAppAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5785FEF291137F700E97EC6 /* ShoppingAppAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5785FFD291137F700E97EC6 /* Build configuration list for PBXNativeTarget "ShoppingAppAPITests" */;
+			buildPhases = (
+				D5785FEC291137F700E97EC6 /* Sources */,
+				D5785FED291137F700E97EC6 /* Frameworks */,
+				D5785FEE291137F700E97EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5785FF3291137F700E97EC6 /* PBXTargetDependency */,
+			);
+			name = ShoppingAppAPITests;
+			productName = ShoppingAppAPITests;
+			productReference = D5785FF0291137F700E97EC6 /* ShoppingAppAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5785FDD291137F700E97EC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D5785FE5291137F700E97EC6 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					D5785FEF291137F700E97EC6 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D5785FE0291137F700E97EC6 /* Build configuration list for PBXProject "ShoppingAppAPI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5785FDC291137F700E97EC6;
+			packageReferences = (
+				D578600229113CAC00E97EC6 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = D5785FE7291137F700E97EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5785FE5291137F700E97EC6 /* ShoppingAppAPI */,
+				D5785FEF291137F700E97EC6 /* ShoppingAppAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5785FE4291137F700E97EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5785FEE291137F700E97EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5785FE2291137F700E97EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5786001291138F600E97EC6 /* FakeStoreService.swift in Sources */,
+				D5785FEB291137F700E97EC6 /* ShoppingAppAPI.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5785FEC291137F700E97EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5785FF6291137F700E97EC6 /* ShoppingAppAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5785FF3291137F700E97EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5785FE5291137F700E97EC6 /* ShoppingAppAPI */;
+			targetProxy = D5785FF2291137F700E97EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5785FF8291137F700E97EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5785FF9291137F700E97EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5785FFB291137F700E97EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SZASM9TWAT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniloncul.ShoppingAppAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5785FFC291137F700E97EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SZASM9TWAT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniloncul.ShoppingAppAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5785FFE291137F700E97EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SZASM9TWAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniloncul.ShoppingAppAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5785FFF291137F700E97EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SZASM9TWAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniloncul.ShoppingAppAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5785FE0291137F700E97EC6 /* Build configuration list for PBXProject "ShoppingAppAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5785FF8291137F700E97EC6 /* Debug */,
+				D5785FF9291137F700E97EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5785FFA291137F700E97EC6 /* Build configuration list for PBXNativeTarget "ShoppingAppAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5785FFB291137F700E97EC6 /* Debug */,
+				D5785FFC291137F700E97EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5785FFD291137F700E97EC6 /* Build configuration list for PBXNativeTarget "ShoppingAppAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5785FFE291137F700E97EC6 /* Debug */,
+				D5785FFF291137F700E97EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D578600229113CAC00E97EC6 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 16.0.0;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D578600329113CAC00E97EC6 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D578600229113CAC00E97EC6 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D5785FDD291137F700E97EC6 /* Project object */;
+}

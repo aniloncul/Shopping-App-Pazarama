@@ -7,10 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D500016A290ECCA600CE76BB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5000169290ECCA600CE76BB /* AuthViewModel.swift */; };
+		D500016D290FB5BC00CE76BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500016C290FB5BC00CE76BB /* User.swift */; };
+		D5000174290FE68700CE76BB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5000173290FE68700CE76BB /* MainTabBarController.swift */; };
+		D500017D290FEBAE00CE76BB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500017B290FEBAE00CE76BB /* SearchViewController.swift */; };
+		D500017E290FEBAE00CE76BB /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D500017C290FEBAE00CE76BB /* SearchViewController.xib */; };
+		D5000182290FEBC600CE76BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5000180290FEBC600CE76BB /* ProfileViewController.swift */; };
+		D5000183290FEBC600CE76BB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5000181290FEBC600CE76BB /* ProfileViewController.xib */; };
+		D50F1A7A290DB3F500706947 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50F1A79290DB3F400706947 /* GoogleService-Info.plist */; };
+		D50F1A7B290DB3F500706947 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50F1A79290DB3F400706947 /* GoogleService-Info.plist */; };
+		D50F1A7C290DB3F500706947 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50F1A79290DB3F400706947 /* GoogleService-Info.plist */; };
 		D537166D2909C1C7007F1A7A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D537166B2909C1C7007F1A7A /* OnboardingViewController.swift */; };
 		D53716712909C7A1007F1A7A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53716702909C7A1007F1A7A /* OnboardingView.swift */; };
 		D53716732909C7B1007F1A7A /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53716722909C7B1007F1A7A /* OnboardingView.xib */; };
+		D578600729113FC400E97EC6 /* ShoppingAppAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D578600629113FC400E97EC6 /* ShoppingAppAPI.framework */; };
+		D578600829113FC400E97EC6 /* ShoppingAppAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D578600629113FC400E97EC6 /* ShoppingAppAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D578600E291143AF00E97EC6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578600D291143AF00E97EC6 /* Product.swift */; };
+		D5786011291148C500E97EC6 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5786010291148C500E97EC6 /* ProductViewModel.swift */; };
+		D57860152912491100E97EC6 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57860132912491100E97EC6 /* ProductsCollectionViewCell.swift */; };
+		D57860162912491100E97EC6 /* ProductsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57860142912491100E97EC6 /* ProductsCollectionViewCell.xib */; };
 		D589C8E3290A872E005B4E08 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D589C8E2290A872E005B4E08 /* OnboardingViewController.xib */; };
+		D5C4B6A8290C8D290024BA17 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4B6A6290C8D290024BA17 /* AuthViewController.swift */; };
+		D5C4B6A9290C8D290024BA17 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C4B6A7290C8D290024BA17 /* AuthViewController.xib */; };
+		D5C4B6AE290DA3D90024BA17 /* Shopping App info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5C4B6AD290DA3D90024BA17 /* Shopping App info.plist */; };
+		D5C4B6B1290DA5F90024BA17 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D5C4B6B0290DA5F90024BA17 /* FirebaseAuth */; };
+		D5C4B6B3290DA5F90024BA17 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5C4B6B2290DA5F90024BA17 /* FirebaseDatabaseSwift */; };
+		D5C4B6B5290DA5F90024BA17 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5C4B6B4290DA5F90024BA17 /* FirebaseFirestoreSwift */; };
+		D5C4B6B7290DA5F90024BA17 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5C4B6B6290DA5F90024BA17 /* FirebaseRemoteConfigSwift */; };
+		D5C4B6B9290DA5F90024BA17 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D5C4B6B8290DA5F90024BA17 /* FirebaseStorage */; };
+		D5EF7E5E29128E7D0044BCF5 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EF7E5C29128E7D0044BCF5 /* ProductViewController.swift */; };
+		D5EF7E5F29128E7D0044BCF5 /* ProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EF7E5D29128E7D0044BCF5 /* ProductViewController.xib */; };
 		D5F33A06290985D90036EAD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F33A05290985D90036EAD5 /* AppDelegate.swift */; };
 		D5F33A08290985D90036EAD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F33A07290985D90036EAD5 /* SceneDelegate.swift */; };
 		D5F33A0A290985D90036EAD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F33A09290985D90036EAD5 /* ViewController.swift */; };
@@ -40,11 +66,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D578600929113FC500E97EC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D578600829113FC400E97EC6 /* ShoppingAppAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D5000169290ECCA600CE76BB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D500016C290FB5BC00CE76BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D5000173290FE68700CE76BB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D500017B290FEBAE00CE76BB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D500017C290FEBAE00CE76BB /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		D5000180290FEBC600CE76BB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D5000181290FEBC600CE76BB /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		D50F1A79290DB3F400706947 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D537166B2909C1C7007F1A7A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D53716702909C7A1007F1A7A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D53716722909C7B1007F1A7A /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
+		D578600629113FC400E97EC6 /* ShoppingAppAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAppAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D578600D291143AF00E97EC6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D5786010291148C500E97EC6 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		D57860132912491100E97EC6 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		D57860142912491100E97EC6 /* ProductsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCollectionViewCell.xib; sourceTree = "<group>"; };
 		D589C8E2290A872E005B4E08 /* OnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		D5C4B6A6290C8D290024BA17 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D5C4B6A7290C8D290024BA17 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		D5C4B6AD290DA3D90024BA17 /* Shopping App info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Shopping App info.plist"; sourceTree = "<group>"; };
+		D5EF7E5C29128E7D0044BCF5 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		D5EF7E5D29128E7D0044BCF5 /* ProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewController.xib; sourceTree = "<group>"; };
 		D5F33A02290985D90036EAD5 /* Shopping-App-Pazarama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping-App-Pazarama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F33A05290985D90036EAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F33A07290985D90036EAD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +124,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C4B6B3290DA5F90024BA17 /* FirebaseDatabaseSwift in Frameworks */,
+				D5C4B6B7290DA5F90024BA17 /* FirebaseRemoteConfigSwift in Frameworks */,
+				D5C4B6B1290DA5F90024BA17 /* FirebaseAuth in Frameworks */,
+				D578600729113FC400E97EC6 /* ShoppingAppAPI.framework in Frameworks */,
+				D5C4B6B9290DA5F90024BA17 /* FirebaseStorage in Frameworks */,
+				D5C4B6B5290DA5F90024BA17 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +150,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5000168290ECC7D00CE76BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5000169290ECCA600CE76BB /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D500016B290FB59400CE76BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D500016C290FB5BC00CE76BB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D500016E290FE5CF00CE76BB /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				D5000172290FE5F600CE76BB /* ViewController */,
+				D5000171290FE5ED00CE76BB /* ViewModel */,
+				D5000170290FE5E600CE76BB /* View */,
+				D500016F290FE5D900CE76BB /* Model */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		D500016F290FE5D900CE76BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5000170290FE5E600CE76BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5000171290FE5ED00CE76BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5000172290FE5F600CE76BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5000173290FE68700CE76BB /* MainTabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D5000175290FEB2B00CE76BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D578600F291148AB00E97EC6 /* ViewModel */,
+				D578600C2911437B00E97EC6 /* Model */,
+				D578600B2911425E00E97EC6 /* Controller */,
+				D578600A2911424C00E97EC6 /* View */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		D500017A290FEB9E00CE76BB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D500017B290FEBAE00CE76BB /* SearchViewController.swift */,
+				D500017C290FEBAE00CE76BB /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D500017F290FEBB200CE76BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D5000180290FEBC600CE76BB /* ProfileViewController.swift */,
+				D5000181290FEBC600CE76BB /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		D537166F2909C677007F1A7A /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +244,83 @@
 			path = OnboardingView;
 			sourceTree = "<group>";
 		};
+		D578600529113FC400E97EC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D578600629113FC400E97EC6 /* ShoppingAppAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D578600A2911424C00E97EC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5EF7E5D29128E7D0044BCF5 /* ProductViewController.xib */,
+				D5786012291248CF00E97EC6 /* ProductCollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D578600B2911425E00E97EC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5EF7E5C29128E7D0044BCF5 /* ProductViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D578600C2911437B00E97EC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D578600D291143AF00E97EC6 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D578600F291148AB00E97EC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5786010291148C500E97EC6 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5786012291248CF00E97EC6 /* ProductCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D57860132912491100E97EC6 /* ProductsCollectionViewCell.swift */,
+				D57860142912491100E97EC6 /* ProductsCollectionViewCell.xib */,
+			);
+			path = ProductCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		D5C4B6A3290C8B6F0024BA17 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D500016B290FB59400CE76BB /* Model */,
+				D5000168290ECC7D00CE76BB /* ViewModel */,
+				D5C4B6A5290C8B860024BA17 /* Controller */,
+				D5C4B6A4290C8B7E0024BA17 /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D5C4B6A4290C8B7E0024BA17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5C4B6A7290C8D290024BA17 /* AuthViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5C4B6A5290C8B860024BA17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5C4B6A6290C8D290024BA17 /* AuthViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D5F339F9290985D90036EAD5 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +328,7 @@
 				D5F33A1E290985DA0036EAD5 /* Shopping-App-PazaramaTests */,
 				D5F33A28290985DA0036EAD5 /* Shopping-App-PazaramaUITests */,
 				D5F33A03290985D90036EAD5 /* Products */,
+				D578600529113FC400E97EC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +411,8 @@
 				D5F33A07290985D90036EAD5 /* SceneDelegate.swift */,
 				D5F33A11290985DA0036EAD5 /* Assets.xcassets */,
 				D5F33A13290985DA0036EAD5 /* LaunchScreen.storyboard */,
+				D5C4B6AD290DA3D90024BA17 /* Shopping App info.plist */,
+				D50F1A79290DB3F400706947 /* GoogleService-Info.plist */,
 				D5F33A16290985DA0036EAD5 /* Info.plist */,
 			);
 			path = App;
@@ -192,6 +421,11 @@
 		D5F33A3D290986DE0036EAD5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D500017F290FEBB200CE76BB /* Profile */,
+				D500017A290FEB9E00CE76BB /* Search */,
+				D5000175290FEB2B00CE76BB /* Products */,
+				D500016E290FE5CF00CE76BB /* MainPage */,
+				D5C4B6A3290C8B6F0024BA17 /* Auth */,
 				D5F33A38290985E20036EAD5 /* Initial */,
 				D5F33A39290985F10036EAD5 /* Onboarding */,
 			);
@@ -208,12 +442,20 @@
 				D5F339FE290985D90036EAD5 /* Sources */,
 				D5F339FF290985D90036EAD5 /* Frameworks */,
 				D5F33A00290985D90036EAD5 /* Resources */,
+				D578600929113FC500E97EC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Shopping-App-Pazarama";
+			packageProductDependencies = (
+				D5C4B6B0290DA5F90024BA17 /* FirebaseAuth */,
+				D5C4B6B2290DA5F90024BA17 /* FirebaseDatabaseSwift */,
+				D5C4B6B4290DA5F90024BA17 /* FirebaseFirestoreSwift */,
+				D5C4B6B6290DA5F90024BA17 /* FirebaseRemoteConfigSwift */,
+				D5C4B6B8290DA5F90024BA17 /* FirebaseStorage */,
+			);
 			productName = "Shopping-App-Pazarama";
 			productReference = D5F33A02290985D90036EAD5 /* Shopping-App-Pazarama.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +528,9 @@
 				Base,
 			);
 			mainGroup = D5F339F9290985D90036EAD5;
+			packageReferences = (
+				D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D5F33A03290985D90036EAD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,8 +549,15 @@
 			files = (
 				D5F33A15290985DA0036EAD5 /* LaunchScreen.storyboard in Resources */,
 				D5F33A12290985DA0036EAD5 /* Assets.xcassets in Resources */,
+				D50F1A7A290DB3F500706947 /* GoogleService-Info.plist in Resources */,
 				D589C8E3290A872E005B4E08 /* OnboardingViewController.xib in Resources */,
+				D5000183290FEBC600CE76BB /* ProfileViewController.xib in Resources */,
+				D57860162912491100E97EC6 /* ProductsCollectionViewCell.xib in Resources */,
 				D5F33A0D290985D90036EAD5 /* Main.storyboard in Resources */,
+				D5C4B6AE290DA3D90024BA17 /* Shopping App info.plist in Resources */,
+				D5C4B6A9290C8D290024BA17 /* AuthViewController.xib in Resources */,
+				D500017E290FEBAE00CE76BB /* SearchViewController.xib in Resources */,
+				D5EF7E5F29128E7D0044BCF5 /* ProductViewController.xib in Resources */,
 				D53716732909C7B1007F1A7A /* OnboardingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50F1A7B290DB3F500706947 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +574,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50F1A7C290DB3F500706947 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +585,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D500016A290ECCA600CE76BB /* AuthViewModel.swift in Sources */,
 				D5F33A0A290985D90036EAD5 /* ViewController.swift in Sources */,
+				D5000174290FE68700CE76BB /* MainTabBarController.swift in Sources */,
 				D5F33A06290985D90036EAD5 /* AppDelegate.swift in Sources */,
 				D537166D2909C1C7007F1A7A /* OnboardingViewController.swift in Sources */,
+				D500017D290FEBAE00CE76BB /* SearchViewController.swift in Sources */,
+				D5EF7E5E29128E7D0044BCF5 /* ProductViewController.swift in Sources */,
+				D5C4B6A8290C8D290024BA17 /* AuthViewController.swift in Sources */,
+				D500016D290FB5BC00CE76BB /* User.swift in Sources */,
 				D53716712909C7A1007F1A7A /* OnboardingView.swift in Sources */,
+				D5000182290FEBC600CE76BB /* ProfileViewController.swift in Sources */,
 				D5F33A10290985D90036EAD5 /* Shopping_App_Pazarama.xcdatamodeld in Sources */,
+				D57860152912491100E97EC6 /* ProductsCollectionViewCell.swift in Sources */,
 				D5F33A08290985D90036EAD5 /* SceneDelegate.swift in Sources */,
+				D578600E291143AF00E97EC6 /* Product.swift in Sources */,
+				D5786011291148C500E97EC6 /* ProductViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +785,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +814,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,6 +944,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5C4B6B0290DA5F90024BA17 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D5C4B6B2290DA5F90024BA17 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		D5C4B6B4290DA5F90024BA17 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		D5C4B6B6290DA5F90024BA17 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		D5C4B6B8290DA5F90024BA17 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5C4B6AF290DA5F90024BA17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D5F33A0E290985D90036EAD5 /* Shopping_App_Pazarama.xcdatamodeld */ = {
