@@ -51,16 +51,16 @@ final class OnboardingViewController: UIViewController {
                     onboardingView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
                     onboardingView.widthAnchor.constraint(equalToConstant: pageWidth)
                 ])
-            } else {
+            } else  {
+                
                 NSLayoutConstraint.activate([
-                    onboardingView.leadingAnchor.constraint(equalTo: onboardingViews.first!.trailingAnchor),
+                    onboardingView.leadingAnchor.constraint(equalTo: onboardingViews[currentPageNumber].trailingAnchor),
                     onboardingView.topAnchor.constraint(equalTo: contentView.topAnchor),
                     onboardingView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
                     onboardingView.widthAnchor.constraint(equalToConstant: pageWidth),
                     onboardingView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
                 ])
             }
-            
         }
     }
     
@@ -73,16 +73,22 @@ final class OnboardingViewController: UIViewController {
         
         let firstOnboardingView = OnboardingView()
         firstOnboardingView.image = UIImage(named: "pazarama.jpeg")
-        firstOnboardingView.text = "First Onboarding View"
-        firstOnboardingView.headerText = "Selam"
+        firstOnboardingView.text = "If we drop the price of an item we sold you at any time before its scheduled delivery date, we will refund 100% of the difference, including tax."
+        firstOnboardingView.headerText = "Best Prices Guaranteed"
         onboardingViews.append(firstOnboardingView)
         
-        
+          
         let secondOnboardingView = OnboardingView()
         secondOnboardingView.image = UIImage(named: "pazarama.jpeg")
-        secondOnboardingView.text = "Second Onboarding View"
-        secondOnboardingView.headerText = "Ve aleyküm selam"
+        secondOnboardingView.text = "You can either pick your items from destinated areas or choose to be delivered at your addresse"
+        secondOnboardingView.headerText = "Advanced Delivery System"
         onboardingViews.append(secondOnboardingView)
+        
+      //let thirdOnboardingView = OnboardingView()
+      //thirdOnboardingView.image = UIImage(named: "pazarama.jpeg")
+      //thirdOnboardingView.text = "Our payment tools allow users to pay you quickly and securely with customer portals, payment processing, and more."
+      //thirdOnboardingView.headerText = "Fast and Secure Payment"
+      //onboardingViews.append(thirdOnboardingView)
     }
     
     @IBAction func didTapNextButton(_ sender: UIButton) {
@@ -113,7 +119,7 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func goToAuth() {
-        navigationController?.pushViewController(UIViewController(), animated: true)
+        navigationController?.pushViewController(AuthViewController(viewModel: AuthViewModel()), animated: true)
     }
 }
 

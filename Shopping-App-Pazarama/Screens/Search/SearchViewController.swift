@@ -1,20 +1,20 @@
 //
-//  LoginViewController.swift
+//  SearchViewController.swift
 //  Shopping-App-Pazarama
 //
-//  Created by Anıl Öncül on 29.10.2022.
+//  Created by Anıl Öncül on 31.10.2022.
 //
 
 import UIKit
 
-class LoginViewController: AuthViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "Search"
     }
-    
+
 
     /*
     // MARK: - Navigation

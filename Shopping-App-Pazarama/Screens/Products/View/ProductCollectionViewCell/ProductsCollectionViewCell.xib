@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ProductsCollectionViewCell" id="gTV-IL-0wX" customClass="ProductsCollectionViewCell" customModule="Shopping_App_Pazarama" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="ayS-Ps-Xfn">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="257"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="pazarama" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-Ey-zrD">
+                                <rect key="frame" x="15" y="8" width="130" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="9v3-he-eAU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="NYL-9r-cNs"/>
+                                    <constraint firstAttribute="height" constant="120" id="RWG-cs-rB3"/>
+                                    <constraint firstAttribute="width" constant="120" id="enn-hC-syM"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maymun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-Uh-cDp">
+                                <rect key="frame" x="8" y="140" width="144" height="107"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sf1-Uh-cDp" secondAttribute="bottom" constant="10" id="CGj-eu-xpV"/>
+                            <constraint firstItem="fa4-Ey-zrD" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="15" id="FE7-aw-I5R"/>
+                            <constraint firstAttribute="trailing" secondItem="Sf1-Uh-cDp" secondAttribute="trailing" constant="8" id="MdZ-Xk-Vnx"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="top" secondItem="fa4-Ey-zrD" secondAttribute="bottom" constant="12" id="SzZ-ca-n5S"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="8" id="bKV-Ps-ivO"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="centerX" secondItem="ayS-Ps-Xfn" secondAttribute="centerX" id="dfB-l1-pod"/>
+                            <constraint firstAttribute="trailing" secondItem="fa4-Ey-zrD" secondAttribute="trailing" constant="15" id="y2W-dB-Q5U"/>
+                            <constraint firstItem="fa4-Ey-zrD" firstAttribute="top" secondItem="ayS-Ps-Xfn" secondAttribute="top" constant="8" id="ykA-gW-oa2"/>
+                            <constraint firstItem="fa4-Ey-zrD" firstAttribute="centerX" secondItem="ayS-Ps-Xfn" secondAttribute="centerX" id="zNs-ek-wUI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <size key="customSize" width="307" height="267"/>
+            <connections>
+                <outlet property="productImage" destination="fa4-Ey-zrD" id="iT0-IO-gmb"/>
+                <outlet property="productLabel" destination="Sf1-Uh-cDp" id="crd-Xk-ZYv"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="20.616113744075829"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pazarama" width="896" height="996"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

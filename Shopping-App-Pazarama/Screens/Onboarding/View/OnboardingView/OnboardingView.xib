@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingView" customModule="Ceksat" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingView" customModule="Shopping_App_Pazarama" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="r3S-X2-H8B"/>
                 <outlet property="headerLabel" destination="VXt-wb-4ck" id="NEi-42-GZW"/>
@@ -16,42 +16,42 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="390" height="511"/>
+            <rect key="frame" x="0.0" y="0.0" width="390" height="623"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGX-bL-hp4">
-                    <rect key="frame" x="16" y="437.33333333333331" width="358" height="20.333333333333314"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXt-wb-4ck">
+                    <rect key="frame" x="16" y="39" width="358" height="28.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGX-bL-hp4">
+                    <rect key="frame" x="16" y="462" width="358" height="117"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AOZ-CS-gQN">
-                    <rect key="frame" x="16" y="144.66666666666666" width="358" height="268.66666666666674"/>
+                    <rect key="frame" x="16" y="169" width="358" height="268.66666666666674"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="268.66666666666669" id="wLY-sV-iPM"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXt-wb-4ck">
-                    <rect key="frame" x="16" y="78" width="358" height="28.666666666666671"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="VXt-wb-4ck" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="2hI-hA-r9q"/>
                 <constraint firstItem="uGX-bL-hp4" firstAttribute="leading" secondItem="VXt-wb-4ck" secondAttribute="leading" id="Dy1-me-52O"/>
                 <constraint firstItem="VXt-wb-4ck" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="H0C-lc-aPY"/>
-                <constraint firstItem="VXt-wb-4ck" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="aIN-qI-kqz"/>
+                <constraint firstItem="VXt-wb-4ck" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="39" id="aIN-qI-kqz"/>
                 <constraint firstItem="uGX-bL-hp4" firstAttribute="leading" secondItem="AOZ-CS-gQN" secondAttribute="leading" id="cd1-ZU-ckl"/>
                 <constraint firstItem="uGX-bL-hp4" firstAttribute="top" secondItem="AOZ-CS-gQN" secondAttribute="bottom" constant="24" id="etj-CV-7Ap"/>
                 <constraint firstItem="uGX-bL-hp4" firstAttribute="trailing" secondItem="VXt-wb-4ck" secondAttribute="trailing" id="hoN-eP-gOC"/>
-                <constraint firstItem="AOZ-CS-gQN" firstAttribute="top" secondItem="VXt-wb-4ck" secondAttribute="bottom" constant="38.000000000000028" id="sGw-3F-hw3"/>
+                <constraint firstItem="AOZ-CS-gQN" firstAttribute="top" secondItem="VXt-wb-4ck" secondAttribute="bottom" constant="101.33333333333333" id="sGw-3F-hw3"/>
                 <constraint firstItem="uGX-bL-hp4" firstAttribute="trailing" secondItem="AOZ-CS-gQN" secondAttribute="trailing" id="zO7-Es-kaa"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-40" y="-170.97156398104264"/>
+            <point key="canvasLocation" x="-40" y="-210.781990521327"/>
         </view>
     </objects>
 </document>

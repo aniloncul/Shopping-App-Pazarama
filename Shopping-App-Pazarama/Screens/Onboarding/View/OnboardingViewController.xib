@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Ceksat" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Shopping_App_Pazarama" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="XCD-vc-WrS" id="ZxN-8V-r7n"/>
                 <outlet property="nextButton" destination="mbc-pP-UJB" id="8RH-wH-AqY"/>
@@ -30,7 +30,7 @@
                         <constraint firstAttribute="height" constant="35" id="bj5-9b-0Ap"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Next"/>
                     <connections>
                         <action selector="didTapNextButton:" destination="-1" eventType="touchUpInside" id="HSe-vE-9qW"/>
                     </connections>
