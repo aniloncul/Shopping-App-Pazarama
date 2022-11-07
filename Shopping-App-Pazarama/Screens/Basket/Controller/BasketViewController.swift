@@ -1,20 +1,21 @@
 //
-//  SearchViewController.swift
+//  BasketViewController.swift
 //  Shopping-App-Pazarama
 //
-//  Created by Anıl Öncül on 31.10.2022.
+//  Created by Anıl Öncül on 6.11.2022.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class BasketViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        title = "Search"
+        // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation

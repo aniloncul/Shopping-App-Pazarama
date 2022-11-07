@@ -1,21 +1,20 @@
 //
-//  ProductViewModel.swift
+//  SearchViewModel.swift
 //  Shopping-App-Pazarama
 //
-//  Created by Anıl Öncül on 1.11.2022.
+//  Created by Anıl Öncül on 6.11.2022.
 //
 
 import Foundation
 import ShoppingAppAPI
-import Kingfisher
 
-protocol ProductViewModelDelegate: AnyObject {
+protocol SearchProductsViewModelDelegate: AnyObject {
     func didErrorOccured(_ error: Error)
     func didFetchProducts()
 }
 
-protocol ProductViewModelProtocol {
-    var delegate: ProductViewModelDelegate? { get set }
+protocol SearchProductsViewModelProtocol {
+    var delegate: SearchProductsViewModelDelegate? { get set }
     var numberOfRows: Int { get }
     func photoForIndexPath(_ indexPath: IndexPath) -> Product?
     func titleForRow(_ row: Int) -> String?
@@ -25,31 +24,27 @@ protocol ProductViewModelProtocol {
   
 }
 
-final class ProductViewModel: ProductViewModelProtocol{
-var delegate: ProductViewModelDelegate?
-    
-    
-    
-
-    
-    var products = [Product]() {
-        didSet {
-             delegate?.didFetchProducts()
-        }  
-    }
-    
-    var numberOfRows: Int {
-        products.count
+final class SearchProductsViewModel: SearchProductsViewModelProtocol {
+    func photoForIndexPath(_ indexPath: IndexPath) -> Product? {
+        products[indexPath.row]
     }
     
     func titleForRow(_ row: Int) -> String? {
         products[row].title
     }
     
-    func photoForIndexPath(_ indexPath: IndexPath) -> Product? {
-        products[indexPath.row]
+    var delegate: SearchProductsViewModelDelegate?
+    
+    
+    var products = [Product]() {
+        didSet {
+             delegate?.didFetchProducts()
+        }
     }
     
+    var numberOfRows: Int {
+        products.count
+    }
     
     func fetchProducts() {
         fakeStoreServiceProvider.request(.getProducts) { [weak self] result in
@@ -58,7 +53,7 @@ var delegate: ProductViewModelDelegate?
                 self?.delegate?.didErrorOccured(error)
             case .success(let response):
                 do {
-                     let products = try JSONDecoder().decode([Product].self, from: response.data )
+                    let products = try JSONDecoder().decode([Product].self, from: response.data )
                     self?.products = products
                     print(self?.numberOfRows)
                     print(products.count)
@@ -66,13 +61,7 @@ var delegate: ProductViewModelDelegate?
                     self?.delegate?.didErrorOccured(error)
                 }
                 
-                
             }
         }
     }
-    
-    
-    
-    
-    
 }

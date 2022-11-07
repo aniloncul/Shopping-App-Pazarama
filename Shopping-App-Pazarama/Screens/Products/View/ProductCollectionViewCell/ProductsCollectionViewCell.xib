@@ -27,12 +27,15 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="9v3-he-eAU"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="NYL-9r-cNs"/>
                                     <constraint firstAttribute="height" constant="120" id="RWG-cs-rB3"/>
-                                    <constraint firstAttribute="width" constant="120" id="enn-hC-syM"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maymun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-Uh-cDp">
-                                <rect key="frame" x="8" y="140" width="144" height="107"/>
+                                <rect key="frame" x="8" y="159" width="144" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="mdO-vS-aIJ"/>
+                                    <constraint firstAttribute="width" constant="144" id="uDo-Wt-mlo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,15 +43,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Sf1-Uh-cDp" secondAttribute="bottom" constant="10" id="CGj-eu-xpV"/>
+                            <constraint firstAttribute="trailing" secondItem="fa4-Ey-zrD" secondAttribute="trailing" constant="15" id="3SX-EK-EFT"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="centerX" secondItem="ayS-Ps-Xfn" secondAttribute="centerX" id="Efy-cf-Dbj"/>
                             <constraint firstItem="fa4-Ey-zrD" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="15" id="FE7-aw-I5R"/>
-                            <constraint firstAttribute="trailing" secondItem="Sf1-Uh-cDp" secondAttribute="trailing" constant="8" id="MdZ-Xk-Vnx"/>
-                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="top" secondItem="fa4-Ey-zrD" secondAttribute="bottom" constant="12" id="SzZ-ca-n5S"/>
-                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="8" id="bKV-Ps-ivO"/>
-                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="centerX" secondItem="ayS-Ps-Xfn" secondAttribute="centerX" id="dfB-l1-pod"/>
-                            <constraint firstAttribute="trailing" secondItem="fa4-Ey-zrD" secondAttribute="trailing" constant="15" id="y2W-dB-Q5U"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="top" secondItem="fa4-Ey-zrD" secondAttribute="bottom" constant="31" id="If0-Wp-Qid"/>
+                            <constraint firstAttribute="bottom" secondItem="Sf1-Uh-cDp" secondAttribute="bottom" constant="31" id="N5J-Vt-fG0"/>
+                            <constraint firstAttribute="trailing" secondItem="Sf1-Uh-cDp" secondAttribute="trailing" constant="8" id="UNy-X9-v3B"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="8" id="dhy-Ck-Rcy"/>
                             <constraint firstItem="fa4-Ey-zrD" firstAttribute="top" secondItem="ayS-Ps-Xfn" secondAttribute="top" constant="8" id="ykA-gW-oa2"/>
-                            <constraint firstItem="fa4-Ey-zrD" firstAttribute="centerX" secondItem="ayS-Ps-Xfn" secondAttribute="centerX" id="zNs-ek-wUI"/>
                         </constraints>
                     </view>
                 </subviews>

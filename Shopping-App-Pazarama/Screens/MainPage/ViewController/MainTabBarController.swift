@@ -1,40 +1,54 @@
 //
-//  MainTabBarController.swift
-//  Shopping-App-Pazarama
+//  TabBarViewController.swift
+//  FlickerApiApp
 //
-//  Created by Anıl Öncül on 31.10.2022.
+//  Created by Berksu Kısmet on 16.10.2022.
 //
 
 import UIKit
 
-final class MainTabBarController: UITabBarController {
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        let productViewModel = ProductViewModel()
-        let productViewController = ProductViewController(viewModel: productViewModel)
-        productViewController.title = "Products"
-        let productNavigationController = UINavigationController(rootViewController: productViewController)
-        
-        let searchViewController = SearchViewController()
-        searchViewController.title = "Search"
-        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
-        
-        let profileViewController = ProfileViewController()
-        profileViewController.title = "Profile"
-        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
+class MainTabBarController: UITabBarController {
 
-        viewControllers = [productNavigationController,
-                           searchNavigationController,
-                           profileNavigationController]
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
-        title = "Main Page"
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        setupViewControllers()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    // Create all of the tabs and icons of the tabs
+    func setupViewControllers(){
+        let productViewModel = ProductViewModel()
+        
+        viewControllers = [
+            createNavigationController(for: ProductViewController(viewModel: productViewModel),
+                                       title: NSLocalizedString("Recent", comment: ""), image: .add
+                                       ),
+            createNavigationController(for: SearchProductsViewController(),
+                                       title: NSLocalizedString("Photos", comment: ""),
+                                       image: .add),
+            createNavigationController(for: ProfileViewController(),
+                                       title: NSLocalizedString("Profile", comment: ""),
+                                       image: .add)
+        ]
+    }
+    
+    fileprivate func createNavigationController(for rootViewController: UIViewController,
+                                                title: String,
+                                                image: UIImage) -> UIViewController{
+        // add navigation controller to each tab
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        navigationController.tabBarItem.title = title
+        navigationController.tabBarItem.image = image
+        navigationController.navigationBar.prefersLargeTitles = true
+        rootViewController.navigationItem.title = title
+        return navigationController
+    }
+
+    
 }

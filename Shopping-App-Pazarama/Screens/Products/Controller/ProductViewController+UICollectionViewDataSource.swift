@@ -18,10 +18,19 @@ extension ProductViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = productCollectionView.dequeueReusableCell(withReuseIdentifier: ProductsCollectionViewCell.identifier, for: indexPath) as? ProductsCollectionViewCell else {fatalError("ProductsCollectionViewCell not found")}
-        
+        let photoAtIndex = viewModel.photoForIndexPath(indexPath)
+
+        let url2 = photoAtIndex?.image ?? ""
         cell.productLabel.text = viewModel.titleForRow(indexPath.row)
-        let url = URL(string: viewModel.photoForIndexPath(indexPath: indexPath).image!)
+        
+        
+    
+        
+        
+        let url = URL(string: (viewModel.photoForIndexPath(indexPath)?.image!)!)
         cell.productImage.kf.setImage(with: url)
+        
+        productCollectionView.reloadItems(at: [indexPath])
         
             
             

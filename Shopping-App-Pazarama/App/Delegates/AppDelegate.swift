@@ -19,11 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        FirebaseApp.configure()
+        setupFirebase()
         return true
+        
     }
+    
+    private func setupFirebase() {
+        FirebaseApp.configure()
+        _ = Firestore.firestore()
+            
+        }
 
     // MARK: UISceneSession Lifecycle
 

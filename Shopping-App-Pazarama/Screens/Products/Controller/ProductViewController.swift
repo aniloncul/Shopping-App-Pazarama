@@ -12,6 +12,7 @@ final class ProductViewController: UIViewController, AlertPresentable {
     // MARK: - Properties
     var viewModel: ProductViewModelProtocol
     
+    
 
     @IBOutlet var productCollectionView: UICollectionView!{
         didSet {
@@ -20,8 +21,6 @@ final class ProductViewController: UIViewController, AlertPresentable {
             productCollectionView.register(UINib(nibName:"ProductsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier:ProductsCollectionViewCell.identifier)
         }
     }
-    
-    
     
     
     // MARK: - Init
@@ -36,7 +35,7 @@ final class ProductViewController: UIViewController, AlertPresentable {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.setNavigationBarHidden(false, animated: false)
         viewModel.delegate = self
         
         viewModel.fetchProducts()
@@ -68,3 +67,10 @@ extension ProductViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
+// MARK : - PresentControllerDelegate
+
+extension ProductViewController : UIAdaptivePresentationControllerDelegate{
+    
+}
+
+  

@@ -15,6 +15,12 @@ class ProductsCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    var image: UIImage? {
+        didSet{
+            productImage.image = image
+        }
+    }
+    
     @IBOutlet  weak var productImage: UIImageView!
     @IBOutlet  weak var productLabel: UILabel!
     

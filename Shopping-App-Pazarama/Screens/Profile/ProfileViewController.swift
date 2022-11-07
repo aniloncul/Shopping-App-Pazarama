@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Firebase
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, AlertPresentable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,4 +16,17 @@ class ProfileViewController: UIViewController {
         title = "Profile"
     }
 
+    @IBAction func logOutButton(_ sender: UIButton) {
+        
+        do {
+            try Auth.auth().signOut()
+            self.parent?.navigationController?.popViewController(animated: true)
+            
+        
+        } catch  {
+            showAlert(title: "Error", message: "Couldn't logout!")
+            
+        }
+        
+    }
 }
