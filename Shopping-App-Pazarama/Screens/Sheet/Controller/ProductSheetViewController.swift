@@ -9,8 +9,9 @@ import UIKit
 import Kingfisher
 import FirebaseStorage
 import SDWebImage
+import Firebase
 
-final class ProductSheetViewController: UIViewController {
+final class ProductSheetViewController: UIViewController, AlertPresentable {
     //MARK: - Properties
     let sheetViewModel = ProductSheetViewModel()
     
@@ -37,6 +38,10 @@ final class ProductSheetViewController: UIViewController {
         return stepper
     }
     
+    var count: String {
+        return sheetCountLabel.text!
+    }
+    
    
     
     //MARK: - Lifecycle
@@ -56,14 +61,33 @@ final class ProductSheetViewController: UIViewController {
         sheetCountLabel.isHidden = false
         let storage = Storage.storage()
         let storageReference = storage.reference()
+    
+    }
+    
+    
+    @IBAction func conformBasketButton(_ sender: Any) {
+        addToFireBase()
+    }
+    
+    func addToFireBase() {
+    
         
-        let basketFolder = storageReference.child("basket")
-
+        let firestoreDatabase = Firestore.firestore()
+        
+        let firestoreProduct = ["count" : count, "price": sheetPriceLabel.text, "title": sheetTitleLabel.text, "username": Auth.auth().currentUser!.email]
+        
+        firestoreDatabase.collection("Product").addDocument(data: firestoreProduct as [String : Any]) { [weak self]
+            (error) in
+            if error != nil {
+                self?.showAlert(title: "Error", message: "Please try again.")
+            } else {
+                
+            }
+        }
     }
     
     @IBAction func update(_ sender: UIStepper) {
         guard let price = product?.price else { return }
-        print(sender.value)
         sheetCountLabel.text = "\(sender.value)"
         sheetPriceLabel.text = "\(sender.value * price)$"
         
