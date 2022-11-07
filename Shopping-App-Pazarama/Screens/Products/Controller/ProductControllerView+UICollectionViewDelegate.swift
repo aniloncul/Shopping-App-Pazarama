@@ -19,6 +19,7 @@ extension ProductViewController: UICollectionViewDelegate {
         
         let sheetViewController = ProductSheetViewController()
         sheetViewController.product = photoAtIndex
+        
         //sheetViewController.sheetTitleLabel.text = viewModel.titleForRow(indexPath.row)
         
         self.present(sheetViewController, animated: true)

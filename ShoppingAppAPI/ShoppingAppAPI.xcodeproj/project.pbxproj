@@ -13,6 +13,8 @@
 		D5785FF7291137F700E97EC6 /* ShoppingAppAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D5785FE9291137F700E97EC6 /* ShoppingAppAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5786001291138F600E97EC6 /* FakeStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5786000291138F600E97EC6 /* FakeStoreService.swift */; };
 		D578600429113CAC00E97EC6 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D578600329113CAC00E97EC6 /* Moya */; };
+		D59C13C92918A960001C218E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D59C13C82918A960001C218E /* SDWebImage */; };
+		D59C13CB2918A960001C218E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D59C13CA2918A960001C218E /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59C13C92918A960001C218E /* SDWebImage in Frameworks */,
+				D59C13CB2918A960001C218E /* SDWebImageMapKit in Frameworks */,
 				D578600429113CAC00E97EC6 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +124,8 @@
 			name = ShoppingAppAPI;
 			packageProductDependencies = (
 				D578600329113CAC00E97EC6 /* Moya */,
+				D59C13C82918A960001C218E /* SDWebImage */,
+				D59C13CA2918A960001C218E /* SDWebImageMapKit */,
 			);
 			productName = ShoppingAppAPI;
 			productReference = D5785FE6291137F700E97EC6 /* ShoppingAppAPI.framework */;
@@ -172,6 +178,7 @@
 			mainGroup = D5785FDC291137F700E97EC6;
 			packageReferences = (
 				D578600229113CAC00E97EC6 /* XCRemoteSwiftPackageReference "Moya" */,
+				D59C13C72918A960001C218E /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = D5785FE7291137F700E97EC6 /* Products */;
 			projectDirPath = "";
@@ -483,6 +490,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		D59C13C72918A960001C218E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -490,6 +505,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D578600229113CAC00E97EC6 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		D59C13C82918A960001C218E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D59C13C72918A960001C218E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		D59C13CA2918A960001C218E /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D59C13C72918A960001C218E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

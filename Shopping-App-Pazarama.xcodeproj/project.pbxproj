@@ -16,7 +16,6 @@
 		D50F1A7B290DB3F500706947 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50F1A79290DB3F400706947 /* GoogleService-Info.plist */; };
 		D50F1A7C290DB3F500706947 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50F1A79290DB3F400706947 /* GoogleService-Info.plist */; };
 		D52157C3291856E900EA1D46 /* FirebaseAuthAccesible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52157C2291856E900EA1D46 /* FirebaseAuthAccesible.swift */; };
-		D52157C5291885E400EA1D46 /* PresenterStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52157C4291885E400EA1D46 /* PresenterStoryBoard.storyboard */; };
 		D537166D2909C1C7007F1A7A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D537166B2909C1C7007F1A7A /* OnboardingViewController.swift */; };
 		D53716712909C7A1007F1A7A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53716702909C7A1007F1A7A /* OnboardingView.swift */; };
 		D53716732909C7B1007F1A7A /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53716722909C7B1007F1A7A /* OnboardingView.xib */; };
@@ -107,7 +106,6 @@
 		D5000181290FEBC600CE76BB /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		D50F1A79290DB3F400706947 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D52157C2291856E900EA1D46 /* FirebaseAuthAccesible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthAccesible.swift; sourceTree = "<group>"; };
-		D52157C4291885E400EA1D46 /* PresenterStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PresenterStoryBoard.storyboard; sourceTree = "<group>"; };
 		D537166B2909C1C7007F1A7A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D53716702909C7A1007F1A7A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D53716722909C7B1007F1A7A /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
@@ -501,7 +499,6 @@
 			isa = PBXGroup;
 			children = (
 				D5C1E78D29158CF00064B663 /* ProductSheetViewController.swift */,
-				D52157C4291885E400EA1D46 /* PresenterStoryBoard.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -778,7 +775,6 @@
 				D5C1E79029158CF00064B663 /* ProductSheetViewController.xib in Resources */,
 				D5EF7E5F29128E7D0044BCF5 /* ProductViewController.xib in Resources */,
 				D53716732909C7B1007F1A7A /* OnboardingView.xib in Resources */,
-				D52157C5291885E400EA1D46 /* PresenterStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

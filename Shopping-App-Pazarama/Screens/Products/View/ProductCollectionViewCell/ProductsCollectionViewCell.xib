@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="160" height="257"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="pazarama" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-Ey-zrD">
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="pazarama" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-Ey-zrD">
                                 <rect key="frame" x="15" y="8" width="130" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="9v3-he-eAU"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="67" id="mdO-vS-aIJ"/>
                                     <constraint firstAttribute="width" constant="144" id="uDo-Wt-mlo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,9 +46,9 @@
                             <constraint firstAttribute="trailing" secondItem="fa4-Ey-zrD" secondAttribute="trailing" constant="15" id="3SX-EK-EFT"/>
                             <constraint firstItem="Sf1-Uh-cDp" firstAttribute="centerX" secondItem="ayS-Ps-Xfn" secondAttribute="centerX" id="Efy-cf-Dbj"/>
                             <constraint firstItem="fa4-Ey-zrD" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="15" id="FE7-aw-I5R"/>
-                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="top" secondItem="fa4-Ey-zrD" secondAttribute="bottom" constant="31" id="If0-Wp-Qid"/>
                             <constraint firstAttribute="bottom" secondItem="Sf1-Uh-cDp" secondAttribute="bottom" constant="31" id="N5J-Vt-fG0"/>
                             <constraint firstAttribute="trailing" secondItem="Sf1-Uh-cDp" secondAttribute="trailing" constant="8" id="UNy-X9-v3B"/>
+                            <constraint firstItem="Sf1-Uh-cDp" firstAttribute="top" secondItem="fa4-Ey-zrD" secondAttribute="bottom" constant="31" id="bu4-7i-eaE"/>
                             <constraint firstItem="Sf1-Uh-cDp" firstAttribute="leading" secondItem="ayS-Ps-Xfn" secondAttribute="leading" constant="8" id="dhy-Ck-Rcy"/>
                             <constraint firstItem="fa4-Ey-zrD" firstAttribute="top" secondItem="ayS-Ps-Xfn" secondAttribute="top" constant="8" id="ykA-gW-oa2"/>
                         </constraints>
