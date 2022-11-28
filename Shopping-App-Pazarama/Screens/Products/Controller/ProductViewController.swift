@@ -12,7 +12,7 @@ final class ProductViewController: UIViewController, AlertPresentable {
     // MARK: - Properties
     var viewModel: ProductViewModelProtocol
     
-    
+    // MARK: - UIElements
 
     @IBOutlet var productCollectionView: UICollectionView!{
         didSet {
@@ -64,6 +64,14 @@ extension ProductViewController: ProductViewModelDelegate{
 // MARK: - CollectionViewFlowLayout
 
 extension ProductViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: .screenWidth / 2 - 7.0, height: .screenWidth / 2 - 7.0)
+        }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+            2
+        }
+    
+    
     
 }
 

@@ -20,25 +20,8 @@ extension ProductViewController: UICollectionViewDelegate {
         let sheetViewController = ProductSheetViewController()
         sheetViewController.product = photoAtIndex
         
-        //sheetViewController.sheetTitleLabel.text = viewModel.titleForRow(indexPath.row)
-        
         self.present(sheetViewController, animated: true)
-        
-       
-        //let url = URL(string: photoAtIndex.image!)
-        //DispatchQueue.main.async {
-          //  sheetViewController.sheetImageView.image = UIImage(named: "pazarama.jpeg")! //self.viewModel.photoForIndexPath(indexPath: indexPath).image!
-            
         }
-        
-        
-        //let url = URL(string: viewModel.photoForIndexPath(indexPath: indexPath).image!)
-        //cell.productImage.kf.setImage(with: url)
-        
-        //sheetViewController.sheetImageView.kf.setImage(with: url)
-        
-        
-        
     }
     
 

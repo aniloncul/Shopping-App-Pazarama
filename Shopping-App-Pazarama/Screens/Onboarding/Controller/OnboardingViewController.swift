@@ -84,6 +84,7 @@ final class OnboardingViewController: UIViewController {
         secondOnboardingView.headerText = "Advanced Delivery System"
         onboardingViews.append(secondOnboardingView)
         
+        
       //let thirdOnboardingView = OnboardingView()
       //thirdOnboardingView.image = UIImage(named: "pazarama.jpeg")
       //thirdOnboardingView.text = "Our payment tools allow users to pay you quickly and securely with customer portals, payment processing, and more."
@@ -119,7 +120,8 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func goToAuth() {
-        navigationController?.pushViewController(AuthViewController(viewModel: AuthViewModel()), animated: true)
+        //navigationController?.pushViewController(AuthViewController(viewModel: AuthViewModel()), animated: true)
+        navigationController?.pushViewController(MainTabBarController(), animated: true)
     }
 }
 

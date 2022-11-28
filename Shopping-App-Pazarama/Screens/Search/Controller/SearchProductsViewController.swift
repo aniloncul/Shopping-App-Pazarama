@@ -8,84 +8,70 @@
 
 import UIKit
 
-final class SearchProductsViewController: UIViewController {
+final class SearchProductsViewController: UIViewController, AlertPresentable {
+    // MARK: - Properties
+    var viewModel: SearchViewModelProtocol
+    
+    // MARK: - UIElements
+    @IBAction func filterProduct(_ sender: Any) {
+        let title = searchSegmentedControl.titleForSegment(at: searchSegmentedControl.selectedSegmentIndex)
+        viewModel.fetchProducts(categorytext: String)
+        searchCollectionView.reloadData()
+    }
+    
+    @IBOutlet weak var searchSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var searchCollectionView: UICollectionView!{
+        didSet {
+            searchCollectionView.dataSource = self
+            searchCollectionView.delegate = self
+            let nib = UINib(nibName: "SearchCollectionViewCell", bundle: nil)
+            searchCollectionView.register(nib, forCellWithReuseIdentifier: "SearchCollectionViewCell")
+        }
+        
+    }
+    
+    // MARK: - Init Attributes
+    
+       init(viewModel: SearchProductsViewModel) {
+           self.viewModel = viewModel
+           super.init(nibName: nil, bundle: nil)
+       }
+    
+       required init?(coder: NSCoder) {
+           fatalError("init(coder:) has not been implemented")
+       }
     
     
     
-    var viewModel = SearchProductsViewModel()
-    let searchView = SearchView()
-    
-    //   init(viewModel: SearchProductsViewModel) {
-    //       self.viewModel = viewModel
-    //       super.init(nibName: nil, bundle: nil)
-    //   }
-    //
-    //   required init?(coder: NSCoder) {
-    //       fatalError("init(coder:) has not been implemented")
-    //   }
-    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
-        viewModel.fetchProducts()
         super.viewDidLoad()
         
-        view = searchView
-        //setCollectionViewDelegate()
-        
-        let searchController = UISearchController()
-        searchController.searchBar.placeholder = "Search..."
-        searchController.searchResultsUpdater = self
-        navigationItem.searchController = searchController
-        
         viewModel.fetchProducts()
-        searchView.collectionView.reloadData()
+        viewModel.changeHandler = {
+            change in
+            switch change {
+            case .didErrorOccurred(let error):
+                print(error.localizedDescription)
+            case .didFetchProduct:
+                self.searchCollectionView.reloadData()
+            }
+        
+        }
     }
     
-    func setCollectionViewDelegate() {
-            searchView.collectionView.delegate = self
-            searchView.collectionView.dataSource = self
-        }
 }
 
-extension SearchProductsViewController:UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let photoAtIndex = viewModel.photoForIndexPath(indexPath) else {fatalError("Photo is nil")}
-        
-        let sheetViewController = ProductSheetViewController()
-        sheetViewController.product = photoAtIndex
-        present(sheetViewController, animated: true, completion: nil)
-    }
-}
+// MARK: - Actions
 
-extension SearchProductsViewController:UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SearchCollectionViewCell else{
-            return UICollectionViewCell()
-        }
-        
-        let photoAtIndex = viewModel.photoForIndexPath(indexPath)
-        
-        
-        let url = URL(string: (viewModel.photoForIndexPath(indexPath)?.image!)!)
-        cell.photoImageView.kf.setImage(with: url)
-        
-        collectionView.reloadItems(at: [indexPath])
-        
-            
-            
-            return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.numberOfRows
-    }
-}
 
+//MARK: - Extensions
 extension SearchProductsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         if let text = searchController.searchBar.text, text.count > 1 {
-            viewModel.fetchProducts()
+            //viewModel.fetchProducts()
         }else{
-            viewModel.fetchProducts()
+            //viewModel.fetchProducts()
         }
     }
 }

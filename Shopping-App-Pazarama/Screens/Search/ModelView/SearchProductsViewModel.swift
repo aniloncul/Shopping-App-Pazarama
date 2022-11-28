@@ -8,37 +8,27 @@
 import Foundation
 import ShoppingAppAPI
 
-protocol SearchProductsViewModelDelegate: AnyObject {
-    func didErrorOccured(_ error: Error)
-    func didFetchProducts()
+enum ProductFetchHandler {
+    case didErrorOccurred(_ error: Error)
+    case didFetchProduct
 }
 
-protocol SearchProductsViewModelProtocol {
-    var delegate: SearchProductsViewModelDelegate? { get set }
-    var numberOfRows: Int { get }
-    func photoForIndexPath(_ indexPath: IndexPath) -> Product?
-    func titleForRow(_ row: Int) -> String?
+protocol SearchViewModelProtocol{
     var products: [Product] { get }
-    func fetchProducts()
-    
-  
+    var numberOfRows : Int { get }
+    func titleForRow(_ row: Int) -> String?
+    func photoForIndexPath(_ indexPath: IndexPath) -> Product?
+    func fetchProducts(categorytext: String)
+    var changeHandler: ((ProductFetchHandler) -> Void)? { get set }
 }
 
-final class SearchProductsViewModel: SearchProductsViewModelProtocol {
-    func photoForIndexPath(_ indexPath: IndexPath) -> Product? {
-        products[indexPath.row]
-    }
+final class SearchProductsViewModel: SearchViewModelProtocol {
     
-    func titleForRow(_ row: Int) -> String? {
-        products[row].title
-    }
-    
-    var delegate: SearchProductsViewModelDelegate?
-    
+    var changeHandler: ((ProductFetchHandler) -> Void)?
     
     var products = [Product]() {
         didSet {
-             delegate?.didFetchProducts()
+            self.changeHandler?(.didFetchProduct)
         }
     }
     
@@ -46,22 +36,29 @@ final class SearchProductsViewModel: SearchProductsViewModelProtocol {
         products.count
     }
     
-    func fetchProducts() {
-        fakeStoreServiceProvider.request(.getProducts) { [weak self] result in
+    func titleForRow(_ row: Int) -> String? {
+        products[row].title
+    }
+    
+    func photoForIndexPath(_ indexPath: IndexPath) -> Product? {
+        products[indexPath.row]
+    }
+    
+    //MARK: - Functions
+    //Fetch the photos from api
+    func fetchProducts(categorytext: String) {
+        fakeStoreServiceProvider.request(FakeStoreService(rawValue: categorytext) ?? .getProducts) { [weak self] result in
             switch result {
             case .failure(let error):
-                self?.delegate?.didErrorOccured(error)
+                self?.changeHandler?(.didErrorOccurred(error))
             case .success(let response):
                 do {
-                    let products = try JSONDecoder().decode([Product].self, from: response.data )
+                    let products = try JSONDecoder().decode([Product].self, from: response.data)
                     self?.products = products
-                    print(self?.numberOfRows)
-                    print(products.count)
-                } catch  {
-                    self?.delegate?.didErrorOccured(error)
+                } catch {
+                    self?.changeHandler?(.didErrorOccurred(error))
                 }
-                
             }
         }
-    }
+    }  
 }

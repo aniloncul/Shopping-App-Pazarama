@@ -18,12 +18,15 @@ extension ProductViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = productCollectionView.dequeueReusableCell(withReuseIdentifier: ProductsCollectionViewCell.identifier, for: indexPath) as? ProductsCollectionViewCell else {fatalError("ProductsCollectionViewCell not found")}
+        
         let photoAtIndex = viewModel.photoForIndexPath(indexPath)
 
-        let url2 = photoAtIndex?.image ?? ""
+        _ = photoAtIndex?.image ?? ""
         cell.productLabel.text = viewModel.titleForRow(indexPath.row)
         
-        
+        cell.layer.cornerRadius = 9.0
+        cell.layer.borderColor = UIColor.systemGray3.cgColor
+        cell.layer.borderWidth = 1
     
         
         

@@ -10,8 +10,12 @@ import Moya
 
 public let fakeStoreServiceProvider = MoyaProvider<FakeStoreService>()
 
-public enum FakeStoreService {
-    case getProducts
+public enum FakeStoreService: String {
+    case getProducts = "All"
+    case getJewelery = "Jewelery"
+    case getElectronics = "Electronics"
+    case getMens = "Men\'s"
+    case getWomens = "Women\'s"
 }
     
 
@@ -24,6 +28,14 @@ extension FakeStoreService: TargetType {
         switch self {
         case .getProducts:
             return "/products"
+        case .getJewelery:
+            return "/products/categories/jewelery"
+        case .getElectronics:
+            return "/products/categories/electronics"
+        case .getMens:
+            return "/products/categories/men's clothing"
+        case .getWomens:
+            return "/products/categories/women's clothing"
             
         }
     }
@@ -33,10 +45,7 @@ extension FakeStoreService: TargetType {
     }
     
     public var task: Moya.Task {
-        switch self {
-        case .getProducts:
-            return .requestPlain
-        }
+        return .requestPlain
     }
     
     public var headers: [String : String]? {

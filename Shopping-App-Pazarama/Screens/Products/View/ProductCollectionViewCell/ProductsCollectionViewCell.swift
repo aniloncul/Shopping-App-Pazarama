@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductsCollectionViewCell: UICollectionViewCell {
+final class ProductsCollectionViewCell: UICollectionViewCell {
     
     var title: String? {
         didSet{
@@ -20,6 +20,14 @@ class ProductsCollectionViewCell: UICollectionViewCell {
             productImage.image = image
         }
     }
+    
+    private lazy var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.layer.cornerRadius = 9.0
+        imageView.clipsToBounds = true
+        imageView.backgroundColor = .systemGray3
+        return imageView
+    }()
     
     @IBOutlet  weak var productImage: UIImageView!
     @IBOutlet  weak var productLabel: UILabel!

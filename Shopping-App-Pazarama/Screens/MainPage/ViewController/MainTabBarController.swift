@@ -24,17 +24,17 @@ class MainTabBarController: UITabBarController {
     // Create all of the tabs and icons of the tabs
     func setupViewControllers(){
         let productViewModel = ProductViewModel()
+        let searchViewModel = SearchProductsViewModel()
         
         viewControllers = [
             createNavigationController(for: ProductViewController(viewModel: productViewModel),
-                                       title: NSLocalizedString("Recent", comment: ""), image: .add
-                                       ),
-            createNavigationController(for: SearchProductsViewController(),
-                                       title: NSLocalizedString("Photos", comment: ""),
-                                       image: .add),
+                                       title: NSLocalizedString("HomePage", comment: ""), image: UIImage(systemName: "house")!),
+            createNavigationController(for: SearchProductsViewController(viewModel: searchViewModel),
+                                       title: NSLocalizedString("Search", comment: ""),
+                                       image: UIImage(systemName: "signpost.right")!),
             createNavigationController(for: ProfileViewController(),
                                        title: NSLocalizedString("Profile", comment: ""),
-                                       image: .add)
+                                       image: UIImage(systemName: "person")!)
         ]
     }
     
@@ -45,10 +45,13 @@ class MainTabBarController: UITabBarController {
         let navigationController = UINavigationController(rootViewController: rootViewController)
         navigationController.tabBarItem.title = title
         navigationController.tabBarItem.image = image
-        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.prefersLargeTitles = false
+        navigationController.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "basket")!, style: .plain, target: self, action: #selector(goToBasket))
         rootViewController.navigationItem.title = title
         return navigationController
     }
-
+    @objc func goToBasket() {
+        
+    }
     
 }
