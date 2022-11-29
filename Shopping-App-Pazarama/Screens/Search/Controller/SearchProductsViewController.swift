@@ -15,7 +15,7 @@ final class SearchProductsViewController: UIViewController, AlertPresentable {
     // MARK: - UIElements
     @IBAction func filterProduct(_ sender: Any) {
         let title = searchSegmentedControl.titleForSegment(at: searchSegmentedControl.selectedSegmentIndex)
-        viewModel.fetchProducts(categorytext: String)
+        viewModel.fetchProducts(categorytext: title ?? "")
         searchCollectionView.reloadData()
     }
     
@@ -46,8 +46,9 @@ final class SearchProductsViewController: UIViewController, AlertPresentable {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        let title = searchSegmentedControl.titleForSegment(at: searchSegmentedControl.selectedSegmentIndex)
+        viewModel.fetchProducts(categorytext: title ?? "")
         
-        viewModel.fetchProducts()
         viewModel.changeHandler = {
             change in
             switch change {
@@ -74,6 +75,18 @@ extension SearchProductsViewController: UISearchResultsUpdating {
             //viewModel.fetchProducts()
         }
     }
+}
+
+extension SearchProductsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: .screenWidth / 2 - 15.0, height: .screenWidth / 2 - 15.0)
+        }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+            2
+        }
+    
+    
+    
 }
 
 

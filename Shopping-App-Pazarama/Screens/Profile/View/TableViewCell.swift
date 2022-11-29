@@ -13,6 +13,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var cellcountLabel: UILabel!
     @IBOutlet weak var cellPriceLabel: UILabel!
     @IBOutlet weak var cellTotalLabel: UILabel!
+    @IBOutlet weak var cellImageView: UIImageView!
+    
     
     
     override func awakeFromNib() {

@@ -25,6 +25,7 @@ class MainTabBarController: UITabBarController {
     func setupViewControllers(){
         let productViewModel = ProductViewModel()
         let searchViewModel = SearchProductsViewModel()
+        let basket2ViewModel = Basket2ViewModel()
         
         viewControllers = [
             createNavigationController(for: ProductViewController(viewModel: productViewModel),
@@ -32,7 +33,7 @@ class MainTabBarController: UITabBarController {
             createNavigationController(for: SearchProductsViewController(viewModel: searchViewModel),
                                        title: NSLocalizedString("Search", comment: ""),
                                        image: UIImage(systemName: "signpost.right")!),
-            createNavigationController(for: ProfileViewController(),
+            createNavigationController(for: Basket2ViewController(),
                                        title: NSLocalizedString("Profile", comment: ""),
                                        image: UIImage(systemName: "person")!)
         ]
@@ -51,7 +52,7 @@ class MainTabBarController: UITabBarController {
         return navigationController
     }
     @objc func goToBasket() {
-        
+        self.present(ProfileViewController(), animated: true)
     }
     
 }

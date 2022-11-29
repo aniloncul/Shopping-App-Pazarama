@@ -14,8 +14,8 @@ public enum FakeStoreService: String {
     case getProducts = "All"
     case getJewelery = "Jewelery"
     case getElectronics = "Electronics"
-    case getMens = "Men\'s"
-    case getWomens = "Women\'s"
+    case getMens = "Men's"
+    case getWomens = "Women's"
 }
     
 
@@ -29,13 +29,13 @@ extension FakeStoreService: TargetType {
         case .getProducts:
             return "/products"
         case .getJewelery:
-            return "/products/categories/jewelery"
+            return "/products/category/jewelery"
         case .getElectronics:
-            return "/products/categories/electronics"
+            return "/products/category/electronics"
         case .getMens:
-            return "/products/categories/men's clothing"
+            return "/products/category/men's clothing"
         case .getWomens:
-            return "/products/categories/women's clothing"
+            return "/products/category/women's clothing"
             
         }
     }

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class ProfileViewController: UIViewController, AlertPresentable {
     
@@ -18,6 +19,7 @@ class ProfileViewController: UIViewController, AlertPresentable {
     var titleLabelArray = [String]()
     var countLabelArray = [String]()
     var priceLabelArray = [String]()
+    var imageViewArray = [String]()
     var totalLabelArray = [String]()
     
     override func viewDidLoad() {
@@ -55,6 +57,10 @@ class ProfileViewController: UIViewController, AlertPresentable {
                         
                         if let title = document.get("title") as? String {
                             self.titleLabelArray.append(title)
+                        }
+                        
+                        if let image_url = document.get("image_url") as? String {
+                            self.imageViewArray.append(image_url)
                         }
                         
                     }
@@ -95,6 +101,11 @@ extension ProfileViewController: UITableViewDataSource {
         cell.cellPriceLabel.text = priceLabelArray[indexPath.row]
         cell.cellcountLabel.text = countLabelArray[indexPath.row]
         cell.cellTitleLabel.text = titleLabelArray[indexPath.row]
+        cell.cellImageView.sd_setImage(with: URL(string: imageViewArray[indexPath.row]))
+        
+        cell.layer.cornerRadius = 9.0
+        cell.layer.borderColor = UIColor.systemGray3.cgColor
+        cell.layer.borderWidth = 1
         return cell
     }
 }

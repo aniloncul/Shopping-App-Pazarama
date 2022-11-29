@@ -121,7 +121,7 @@ final class OnboardingViewController: UIViewController {
     
     private func goToAuth() {
         //navigationController?.pushViewController(AuthViewController(viewModel: AuthViewModel()), animated: true)
-        navigationController?.pushViewController(MainTabBarController(), animated: true)
+        navigationController?.pushViewController(AuthViewController(viewModel: AuthViewModel()), animated: true)
     }
 }
 

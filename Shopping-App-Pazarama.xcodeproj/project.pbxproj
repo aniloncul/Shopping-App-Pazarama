@@ -24,8 +24,8 @@
 		D53B5F6029320DCA000E51FA /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53B5F5E29320DCA000E51FA /* SearchCollectionViewCell.xib */; };
 		D53B5F6329321C04000E51FA /* SearchProductsViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B5F6229321C04000E51FA /* SearchProductsViewController+DataSource.swift */; };
 		D53B5F6529321C17000E51FA /* SearchProductsViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B5F6429321C17000E51FA /* SearchProductsViewController+Delegate.swift */; };
-		D55242402918033C0006821B /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552423F2918033C0006821B /* BasketViewController.swift */; };
-		D55242422918074D0006821B /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55242412918074C0006821B /* BasketViewModel.swift */; };
+		D55242402918033C0006821B /* Basket2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552423F2918033C0006821B /* Basket2ViewController.swift */; };
+		D55242422918074D0006821B /* Basket2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55242412918074C0006821B /* Basket2ViewModel.swift */; };
 		D552424529181EE40006821B /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552424429181EE40006821B /* CGFloat+Extensions.swift */; };
 		D552424729181F270006821B /* FireBaseFireStoreAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552424629181F270006821B /* FireBaseFireStoreAccessible.swift */; };
 		D552424929181F660006821B /* UserDefaultsAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552424829181F660006821B /* UserDefaultsAccessible.swift */; };
@@ -119,8 +119,8 @@
 		D53B5F5E29320DCA000E51FA /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		D53B5F6229321C04000E51FA /* SearchProductsViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchProductsViewController+DataSource.swift"; sourceTree = "<group>"; };
 		D53B5F6429321C17000E51FA /* SearchProductsViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchProductsViewController+Delegate.swift"; sourceTree = "<group>"; };
-		D552423F2918033C0006821B /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
-		D55242412918074C0006821B /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		D552423F2918033C0006821B /* Basket2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket2ViewController.swift; sourceTree = "<group>"; };
+		D55242412918074C0006821B /* Basket2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket2ViewModel.swift; sourceTree = "<group>"; };
 		D552424429181EE40006821B /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		D552424629181F270006821B /* FireBaseFireStoreAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseFireStoreAccessible.swift; sourceTree = "<group>"; };
 		D552424829181F660006821B /* UserDefaultsAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAccessible.swift; sourceTree = "<group>"; };
@@ -322,7 +322,7 @@
 		D552423C291803070006821B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D552423F2918033C0006821B /* BasketViewController.swift */,
+				D552423F2918033C0006821B /* Basket2ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 		D552423E291803120006821B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D55242412918074C0006821B /* BasketViewModel.swift */,
+				D55242412918074C0006821B /* Basket2ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -854,7 +854,7 @@
 				D5BC71052915456300D1A11E /* ProductViewController+UICollectionViewDataSource.swift in Sources */,
 				D500016A290ECCA600CE76BB /* AuthViewModel.swift in Sources */,
 				D552424529181EE40006821B /* CGFloat+Extensions.swift in Sources */,
-				D55242402918033C0006821B /* BasketViewController.swift in Sources */,
+				D55242402918033C0006821B /* Basket2ViewController.swift in Sources */,
 				D52157C3291856E900EA1D46 /* FirebaseAuthAccesible.swift in Sources */,
 				D552424729181F270006821B /* FireBaseFireStoreAccessible.swift in Sources */,
 				D59C13CE2918CB87001C218E /* TableViewCell.swift in Sources */,
@@ -869,7 +869,7 @@
 				D5EF7E5E29128E7D0044BCF5 /* ProductViewController.swift in Sources */,
 				D5C4B6A8290C8D290024BA17 /* AuthViewController.swift in Sources */,
 				D500016D290FB5BC00CE76BB /* User.swift in Sources */,
-				D55242422918074D0006821B /* BasketViewModel.swift in Sources */,
+				D55242422918074D0006821B /* Basket2ViewModel.swift in Sources */,
 				D5C1E7922915E4F90064B663 /* ProductSheetViewModel.swift in Sources */,
 				D53716712909C7A1007F1A7A /* OnboardingView.swift in Sources */,
 				D5000182290FEBC600CE76BB /* ProfileViewController.swift in Sources */,

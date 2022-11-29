@@ -11,34 +11,34 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchProductsViewController" customModule="Shopping_App_Pazarama" customModuleProvider="target">
             <connections>
-                <outlet property="searchCollectionView" destination="KaK-w4-ibX" id="TFT-nP-7e9"/>
-                <outlet property="searchSegmentedControl" destination="83Z-hK-NBn" id="e7r-2y-pRC"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="searchCollectionView" destination="gcS-55-Vyv" id="HiO-eM-mrn"/>
+                <outlet property="searchSegmentedControl" destination="11Q-Ur-HNv" id="UA7-4w-EqB"/>
+                <outlet property="view" destination="iyv-J9-z4B" id="FBB-29-MkM"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+        <view contentMode="scaleToFill" id="iyv-J9-z4B">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="83Z-hK-NBn">
-                    <rect key="frame" x="10" y="141" width="355" height="32"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="11Q-Ur-HNv">
+                    <rect key="frame" x="16" y="163" width="358" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
                         <segment title="Jewelery"/>
                         <segment title="Electronics"/>
-                        <segment title="Men\'s"/>
-                        <segment title="Women\'s"/>
+                        <segment title="Men's"/>
+                        <segment title="Women's"/>
                     </segments>
                     <connections>
-                        <action selector="filterProduct:" destination="-1" eventType="valueChanged" id="Eh3-yz-khP"/>
+                        <action selector="filterProduct:" destination="-1" eventType="valueChanged" id="u6T-5D-ZEI"/>
                     </connections>
                 </segmentedControl>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-w4-ibX">
-                    <rect key="frame" x="16" y="200" width="343" height="391"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="gcS-55-Vyv">
+                    <rect key="frame" x="0.0" y="216" width="390" height="547"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="opf-LD-k41">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="4" sectionInsetReference="layoutMargins" id="Me3-FR-DW4">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -46,9 +46,9 @@
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="DbQ-4w-LPt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="140" y="20.616113744075829"/>
+            <point key="canvasLocation" x="1.5384615384615383" y="-22.037914691943126"/>
         </view>
     </objects>
     <resources>

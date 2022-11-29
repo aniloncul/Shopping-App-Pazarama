@@ -7,6 +7,6 @@
 
 import Foundation
 
-class BasketViewModel {
+class Basket2ViewModel {
     
 }

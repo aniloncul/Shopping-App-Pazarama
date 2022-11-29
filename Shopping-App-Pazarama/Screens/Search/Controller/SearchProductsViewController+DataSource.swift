@@ -21,6 +21,10 @@ extension SearchProductsViewController: UICollectionViewDataSource{
         let url = URL(string: (viewModel.photoForIndexPath(indexPath)?.image!)!)
         cell.searchImageView.kf.setImage(with: url)
         
+        cell.layer.cornerRadius = 9.0
+        cell.layer.borderColor = UIColor.systemGray3.cgColor
+        cell.layer.borderWidth = 1
+        
         return cell
     }
 }
